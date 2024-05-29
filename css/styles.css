@@ -1,0 +1,134 @@
+.body {
+    /* background-color: #D6D0D0; */
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cardTitulo{
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+
+.Corazon {
+    width: 100%;
+    animation: palpitar 3s linear infinite alternate;
+    will-change: transform;
+    display: inline-block; /* Asegura que el corazón no afecte al diseño del header o footer */
+}
+
+@keyframes palpitar {
+    0% {
+        transform: translateY(0) scale(0.8);
+    }
+    50% {
+        transform: translateY(0) scale(0.9);
+    }
+    100% {
+        transform: translateY(0) scale(0.8);
+    }
+}
+
+@font-face {
+    font-family: 'ValentineCute';
+    src: url('./fonts/ValentineCute.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maely';
+    src: url('./fonts/Maely.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Titulo {
+    font-family: 'ValentineCute', sans-serif;
+}
+
+.TituloNivel2 {
+    font-family: 'ValentineCute', sans-serif;
+    color: #C1272D;
+}
+
+.Parrafo {
+    font-family: 'Maely', sans-serif;
+}
+
+.ModalTittle {
+    font-family: 'Maely', sans-serif;
+    color: #00a86b;
+}
+
+.modal-content {
+    border: none;
+    background-color: rgb(254, 238, 218);
+}
+
+#botonCerrar {
+    background-color: #00a86b;
+    color: white;
+    border: #00a86b;
+}
+
+#botonCerrar:hover{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    border:  rgb(27, 26, 26);
+}
+
+.btnIcons {
+    transition: transform 0.3s ease;
+}
+
+.btnIcons:hover {
+    transform: scale(1.13);
+}
+
+.ModalTittleNote {
+    font-family: 'Maely', sans-serif;
+}
+
+.CuponImg {
+    width: 50%;
+}
+
+#overlay imgOverlay {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-out;
+}
+
+.img-overlay-large {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) { /* Para pantallas más grandes que 768px (tabletas, laptops, etc.) */
+    .img-overlay-large {
+        max-width: 45vw; /* Desactiva la restricción de ancho */
+        max-height: none; /* Desactiva la restricción de alto */
+        width: auto; /* La imagen toma su tamaño original */
+        height: auto; /* La imagen toma su tamaño original */
+    }
+}
+
+
+@media (max-width: 767px) { /* Para pantallas más pequeñas que 768px (dispositivos móviles) */
+    .img-overlay-large {
+        max-width: 90%; /* Limita el ancho al 90% del tamaño de la pantalla */
+        max-height: 90%; /* Limita el alto al 90% del tamaño de la pantalla */
+    }
+}
+
+.text-align-justify{
+    text-align: justify;
+}
